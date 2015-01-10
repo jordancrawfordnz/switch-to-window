@@ -17,7 +17,7 @@ void SetForegroundWindowInternal(HWND hWnd)
 		}
 	}
 
-	::SetForegroundWindow(hWnd);
+	::SwitchToThisWindow(hWnd, true);
 
 	if (::GetKeyboardState((LPBYTE)&keyState))
 	{
